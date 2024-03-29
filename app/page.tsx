@@ -13,13 +13,13 @@ import { Button } from "./components/button";
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="w-full h-full flex gap-8">
-        <div className="flex flex-col rounded-3xl bg-primary overflow-hidden">
+      <div className="w-full h-full grid grid-cols-4 gap-8">
+        <div className="col-span-1 flex flex-col rounded-3xl bg-primary overflow-hidden">
           <div className="flex flex-col items-center gap-4 p-12 bg-primary-background shadow text-white">
             <h2 className="uppercase">Alex Johnson</h2>
             <h4>alex.johnson@gmail.com</h4>
           </div>
-          <div className="px-12 py-8">
+          <div className="px-12 py-8 space-y-12">
             <ul className="space-y-8 text-white text-xl">
               <li className="uppercase flex items-center gap-4">
                 <FaHome className="text-secondary" />
@@ -47,12 +47,12 @@ export default function Home() {
               </li>
             </ul>
             <div>
-              <h4>ACTIVE USERS</h4>
+              <h4 className="text-secondary text-lg">ACTIVE USERS</h4>
               <div>avatar avatar avatar avatar</div>
             </div>
           </div>
         </div>
-        <div className="flex flex-col gap-6 flex-1">
+        <div className="col-span-3 flex flex-col gap-6 flex-1">
           <div className="bg-white rounded-3xl p-8 space-y-6">
             <div className="grid grid-cols-4 gap-4">
               <div className="flex justify-between col-span-2 py-2 px-4 rounded-full bg-primary-foreground">
